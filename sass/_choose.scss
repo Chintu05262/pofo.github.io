@@ -1,0 +1,77 @@
+.choose_section {
+    background: rgb(19, 18, 18);
+    .choose_wrapper {
+        padding: 120px 0;
+        .choose_wrapper_topcontent{
+          text-align: center;
+          line-height: 0px;
+          &_parra{
+            color: $grey;
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+          &_heading{
+            color: $whitetext;
+            font-size: 25px;
+            line-height: 1.3;
+            font-weight: 700;
+          }
+        }
+
+        &_cards{
+            margin-top: 100px;
+            border-radius: 0px;
+            .card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 40px 0;
+                border-bottom: 3px solid red;
+                border-radius: 0px;
+                
+                .custom_svg{
+                    height: 100px;
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // margin-top: 50px;
+                }
+                &-body{
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                &-title{
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+                &-text{
+                    margin-top: 20px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .choose_wrapper{
+            
+            &_cards{
+                .card{
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .choose_wrapper{
+            padding: 90px 0;
+            &_cards{
+                margin-top: 30px;
+                .card{
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}

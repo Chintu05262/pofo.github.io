@@ -1,0 +1,70 @@
+.premium_design {
+    padding: 60px 0;
+    background: whitesmoke;
+
+    &_leftside {
+        height: 100%;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_rightside {
+        background: rgb(19, 18, 18);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        &_content {
+            // padding: 50px;
+            &_topheading {
+                font-size: 14px;
+                color: $grey;
+            }
+
+            &_heading {
+                font-size: 36px;
+                color: $whitetext;
+                font-weight: 700;
+                max-width: 500px;
+            }
+
+            &_parra {
+                max-width: 440px;
+                color: $grey;
+                margin-top: 20px;
+            }
+
+            &_button {
+                text-transform: uppercase;
+                background: $whitetext;
+                color: $black;
+                padding: 10px 26px;
+                border-radius: 20px;
+                border: none;
+                font-size: 12px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+   
+    @include media-breakpoint-down(lg){
+       padding: 100px 0;
+    }
+    @include media-breakpoint-down(sm){
+        padding-bottom: 30px;
+        &_rightside {
+            &_content {
+                &_heading {
+                    font-size: 22px;
+                  
+                }
+            }
+        }
+                
+    }
+}

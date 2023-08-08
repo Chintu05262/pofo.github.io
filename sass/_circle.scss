@@ -1,0 +1,87 @@
+.progress_section {
+    padding: 100px 0;
+    .progress_wrapper_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+
+        &_circular_progress {
+            position: relative;
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            background: conic-gradient(grey 324deg, #ededed 0deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                content: "";
+                position: absolute;
+                height: 168px;
+                width: 168px;
+                border-radius: 50%;
+                background-color: $whitetext;
+            }
+
+            &_value {
+                position: relative;
+                font-size: 20px;
+                color: $black;
+            }
+            &:nth-child(2){
+                background: conic-gradient(grey 24deg, #ededed 0deg);
+            }
+        }
+
+    }
+
+
+
+    .text {
+        font-size: 12px;
+        // text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: $grey;
+        text-transform: uppercase;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 20px 0;
+        .progress_wrapper_container {
+            &_circular_progress {
+                margin-top: 40px;
+            }
+        }
+    }
+
+
+    // Child selector
+    > .container{
+        > .row{
+            > div{
+                &:nth-child(2){
+                    .progress_wrapper_container{
+                        &_circular_progress{
+                            background: conic-gradient(grey 270deg, #ededed 0deg);
+                        }
+                    }
+                }
+
+                &:nth-child(4){
+                    .progress_wrapper_container{
+                        &_circular_progress{
+                            background: conic-gradient(grey 223.2deg, #ededed 0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

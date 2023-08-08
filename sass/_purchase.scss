@@ -1,0 +1,42 @@
+.purchase_section{
+    background: rgb(228 11 55 / 84%);
+    padding: 60px 0;
+    .purchase_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &_leftside{
+            text-align: right;
+            margin-top: 5px;
+            h6{
+                font-weight: 500;
+                color: $whitetext;
+            }
+        }
+        &_rightside{
+            .purchase_btn{
+                background: $whitetext;
+                padding: 10px 45px;
+                border-radius: 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .purchase_wrapper{
+            flex-direction: column;
+            &_leftside{
+                text-align: center;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        padding: 30px 0;
+        .purchase_wrapper{
+            gap: 10px;
+        }
+    }
+}

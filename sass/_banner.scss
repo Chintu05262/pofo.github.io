@@ -1,0 +1,109 @@
+.banner_wrapper {
+    position: relative;
+   
+    &_backgroundimg {
+        background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.5)), url(/images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: $whitetext;
+        height: 770px;
+        position: relative;
+        &_parra{
+            font-size: 16px;
+            text-align: center;
+            color: #fefefebd;
+        }
+        &_heading{
+            font-size: 80px;
+            font-weight: 800;
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 800px;
+            line-height: 1;
+            margin: 5px 0;
+        }
+        &_button{
+            background: $whitetext;
+            padding: 10px 30px;
+            color: $black;
+            text-transform: uppercase;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            &:hover{
+                background: $black;
+                color: $whitetext;
+                transition: .5s;
+            }
+        }
+    }
+    
+    @include media-breakpoint-down(lg) {
+        &_backgroundimg {
+            height: 575px;
+            &_heading{
+                font-size: 55px;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        &_backgroundimg{
+            height: 569px;
+            &_heading{
+                font-size: 50px;
+                
+            }
+           
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        &_backgroundimg{
+            height: 409px;
+            &_heading{
+                font-size: 30px;
+                max-width: 400px;
+            }
+           
+        }
+    }
+   
+}
+
+
+// icon fixed css //
+
+.banner_wrapper_backgroundimg_icons{
+    position: fixed;
+    right: 0px;
+    top: 96px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    a{
+        margin: 5px 0;
+        background: $whitetext;
+        padding: 3px 25px 3px 5px;
+        color: $grey;
+        z-index: 1000;
+    }
+}
+.banner_wrapper_backgroundimg_arrowicons{
+    position: fixed;
+    bottom: 9rem;
+    z-index: 100;
+    right: 40px;
+    a{
+        background: $grey;
+        border-radius: 20px;
+        color: $whitetext;
+        padding: 4px;
+        font-size: 25px;
+        z-index: 100;
+    }
+}
+

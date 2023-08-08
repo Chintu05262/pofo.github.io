@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lunasima', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: whitesmoke;
+
+}
+
+$primarycolor: rgb(205, 3, 3);
+$black: #000;
+$whitetext: #fff;
+$grey: grey;
+
+img{
+    border-radius: 0px;
+}
+
+.card-img-top {
+    border-radius: 0px;
+}
+
+svg{
+    fill: rgb(228 11 55 / 84%);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
