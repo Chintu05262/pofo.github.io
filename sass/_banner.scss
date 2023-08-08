@@ -2,7 +2,7 @@
     position: relative;
    
     &_backgroundimg {
-        background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.5)), url(/images/banner.jpg);
+        background-image: linear-gradient(rgba(0,0,0, .6), rgba(0,0,0,.5)), url(./images/banner.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
