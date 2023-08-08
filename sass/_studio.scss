@@ -9,7 +9,7 @@
         object-fit: cover;
 
         &_bgimg_one {
-            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url(/images/banner.jpg);
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url(./images/banner.jpg);
             height: 350px;
             background-size: cover;
             background-repeat: no-repeat;
@@ -20,7 +20,7 @@
             }
         }
         &_bgimg_two {
-            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url(/images/bag-1.jpg);
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url(./images/bag-1.jpg);
             height: 350px;
             background-size: cover;
             background-repeat: no-repeat;
@@ -31,7 +31,7 @@
             }
         }
         &_bgimg_three {
-            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url(/images/cake-1.jpg);
+            background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url(./images/cake-1.jpg);
             height: 350px;
             background-size: cover;
             background-repeat: no-repeat;
